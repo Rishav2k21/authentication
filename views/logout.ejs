@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logout</title>
+</head>
+<style>
+    body {
+    background-color: rgb(145, 164, 179);
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+.ri{
+    color:rgb(236, 116, 116);
+    size: 10px;
+    font-size: larger;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+     background-color: white;
+}
+.name{
+    color: greenyellow;
+    text-shadow: 0cap;
+    font-size: medium;
+}
+</style>
+<body>
+    <form action="/logout" method="get">
+
+        <h1 class="name">my name is  <%=locals.name%> </h1>
+        
+       <div class="ri"> <button>logout</button></div>
+    </form>
+</body>
+</html>
